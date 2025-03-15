@@ -1,0 +1,25 @@
+image_detection_project/
+├── data/
+│   ├── images/       # Images used for training, validation, and testing
+│   │   ├── train/
+│   │   ├── val/
+│   │   ├── test/
+│   ├── labels/       # YOLO-format labels corresponding to the images
+│   │   ├── train/
+│   │   ├── val/
+│   │   ├── test/
+├── models/           # Directory to save trained models
+├── utils/            # Utility scripts and helper functions
+│   ├── __init__.py   # To treat 'utils' as a package
+│   ├── data_utils.py # Data loading and preprocessing utilities
+│   ├── eval_utils.py # Evaluation metrics (e.g., mAP)
+│   ├── viz_utils.py  # Visualization utilities (e.g., plotting results)
+├── scripts/          # Core scripts for training, evaluation, etc.
+│   ├── preprocess.py # Preprocesses images and labels
+│   ├── train.py      # Training script
+│   ├── evaluate.py   # Model evaluation script
+│   ├── detect.py     # Object detection script for inference
+├── configs/          # Configuration files for the project
+│   ├── config.yaml   # YAML file to define hyperparameters, paths, etc.
+├── requirements.txt  # List of dependencies
+├── README.md         # Project documentation

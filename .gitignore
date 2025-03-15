@@ -1,0 +1,75 @@
+# Ignore Python virtual environments
+env/
+venv/
+**/env/
+**/venv/
+
+# Ignore Python cache files
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore MLflow artifacts and logs
+mlflow/
+**/mlflow/
+mlruns/
+**/mlruns/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Ignore logs and temporary files
+logs/
+**/logs/
+*.log
+*.out
+*.err
+
+# Ignore datasets and large files
+data/
+**/data/
+*.csv
+*.json
+*.parquet
+*.h5
+*.pickle
+
+# Ignore compiled and temporary files
+*.so
+*.dll
+*.dylib
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore IDE and editor config files
+.vscode/
+.idea/
+**/.vscode/
+**/.idea/
+**/.ropeproject/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore environment configuration files
+.env
+**/.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/
+**/build/
+**/dist/
+**/*.egg-info/
+
+*.zip
+**/*.zip
