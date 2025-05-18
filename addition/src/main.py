@@ -5,8 +5,8 @@ from config import load_config
 import mlflow
 import mlflow.pytorch
 
+
 mlflow.set_experiment("basics")
-mlflow.pytorch.autolog()
 with mlflow.start_run():
     configs = load_config("configs/config.yaml")
     dataloader = load_dataloaders(path = configs["data_path"], label = "sum", batch_size= 16)

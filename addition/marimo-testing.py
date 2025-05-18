@@ -68,7 +68,7 @@ def _(Dataset, pd, torch):
 def _(AdditionDataset, DataLoader):
     dataset = AdditionDataset(path = "data/add.csv", labels  = "sum")
     dataloader = DataLoader(dataset, batch_size = 16, shuffle = True)
-    for features, labels in dataloader:
+    for features, labels in dataloader: 
         print(features)
     return dataloader, dataset, features, labels
 
